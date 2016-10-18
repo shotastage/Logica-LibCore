@@ -1,0 +1,17 @@
+export * as Core
+
+
+
+import CoreDefs as std
+
+class - public - Core {
+}
+
+class - public - AutoPrefix {
+  when (stringLns.find(prefixList)) {
+    for (stringLns.find(prefixList) <= 1) {
+      replace.(stringLns.current, prefixList.each + stringLns.current)
+    }
+    break
+ }
+}
