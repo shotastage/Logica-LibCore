@@ -4,14 +4,25 @@ export * as Core
 
 import CoreDefs as std
 
-class - public - Core {
+
+class String {
+  def find(*str: string) -> bool {
+    let status = exec(stringFind(*str))
+    if status {
+      return true
+    } else {
+      return false
+    }
+  }
+
+  def search(*str: string) -> string[] {
+
+  }
+
+  def -> TextObject add(str: string) -> string {
+    return @TextObject ++ str 
+  }
 }
 
-class - public - AutoPrefix {
-  when (stringLns.find(prefixList)) {
-    for (stringLns.find(prefixList) <= 1) {
-      replace.(stringLns.current, prefixList.each + stringLns.current)
-    }
-    break
- }
-}
+
+public let string = String()
